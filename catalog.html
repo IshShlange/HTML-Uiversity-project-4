@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalog - DigitalReads</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <img src="images/library.jpg" alt="DigitalReads Logo">
+                    <span class="logo-text">DigitalReads</span>
+                </a>
+                
+                <button class="menu-toggle" id="menuToggle">☰</button>
+                
+                <nav class="nav" id="mainNav">
+                    <ul class="main-menu">
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="catalog.html">Catalog</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="mybooks.html">My Books</a></li>
+                        <li><a href="events.html">Events</a></li>
+                    </ul>
+                    
+                    <ul class="auth-menu">
+                        <li><a href="login.html" class="login-btn">Login</a></li>
+                        <li><a href="register.html" class="register-btn">Register</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="catalog-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="text-center mb-4">Our Book Collection</h2>
+                </div>
+            </div>
+
+            <!-- Search -->
+            <div class="row justify-content-center mb-4">
+                <div class="col-md-6 col-12">
+                    <div class="search-box">
+                        <input type="text" placeholder="Search books...">
+                        <button class="search-btn">Search</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Books Grid -->
+            <div class="row">
+                <!-- Book 1 -->
+                <div class="col-xl-4 col-lg-6 col-md-6 col-12 mb-4">
+                    <div class="book-card" data-title="JavaScript: The Good Parts" data-author="Douglas Crockford">
+                        <img src="images/book1.jpg" alt="JavaScript: The Good Parts" class="book-cover">
+                        <div class="book-card-body">
+                            <h3>JavaScript: The Good Parts</h3>
+                            <p>Douglas Crockford</p>
+                            <span class="category">Programming</span>
+                            <button class="read-btn">Read Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Book 2 -->
+                <div class="col-xl-4 col-lg-6 col-md-6 col-12 mb-4">
+                    <div class="book-card" data-title="Clean Code" data-author="Robert C. Martin">
+                        <img src="images/book2.jpg" alt="Clean Code" class="book-cover">
+                        <div class="book-card-body">
+                            <h3>Clean Code</h3>
+                            <p>Robert C. Martin</p>
+                            <span class="category">Programming</span>
+                            <button class="read-btn">Read Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Book 3 -->
+                <div class="col-xl-4 col-lg-6 col-md-6 col-12 mb-4">
+                    <div class="book-card" data-title="Design Patterns" data-author="Erich Gamma">
+                        <img src="images/book3.jpg" alt="Design Patterns" class="book-cover">
+                        <div class="book-card-body">
+                            <h3>Design Patterns</h3>
+                            <p>Erich Gamma</p>
+                            <span class="category">Computer Science</span>
+                            <button class="read-btn">Read Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Book 4 -->
+                <div class="col-xl-4 col-lg-6 col-md-6 col-12 mb-4">
+                    <div class="book-card" data-title="Python Crash Course" data-author="Eric Matthes">
+                        <img src="images/python.jpg" alt="Python Crash Course" class="book-cover">
+                        <div class="book-card-body">
+                            <h3>Python Crash Course</h3>
+                            <p>Eric Matthes</p>
+                            <span class="category">Programming</span>
+                            <button class="read-btn">Read Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Book 5 -->
+                <div class="col-xl-4 col-lg-6 col-md-6 col-12 mb-4">
+                    <div class="book-card" data-title="Effective Java" data-author="Joshua Bloch">
+                        <img src="images/effJava.jpg" alt="Effective Java" class="book-cover">
+                        <div class="book-card-body">
+                            <h3>Effective Java</h3>
+                            <p>Joshua Bloch</p>
+                            <span class="category">Programming</span>
+                            <button class="read-btn">Read Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Book 6 -->
+                <div class="col-xl-4 col-lg-6 col-md-6 col-12 mb-4">
+                    <div class="book-card" data-title="You Don't Know JS" data-author="Kyle Simpson">
+                        <img src="images/you dont know js.jpg" alt="You Don't Know JS" class="book-cover">
+                        <div class="book-card-body">
+                            <h3>You Don't Know JS</h3>
+                            <p>Kyle Simpson</p>
+                            <span class="category">Programming</span>
+                            <button class="read-btn">Read Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Book 7 -->
+                <div class="col-xl-4 col-lg-6 col-md-6 col-12 mb-4">
+                    <div class="book-card" data-title="HTML & CSS: Design" data-author="Jon Duckett">
+                        <img src="images/html,css.jpg" alt="HTML & CSS: Design" class="book-cover">
+                        <div class="book-card-body">
+                            <h3>HTML & CSS: Design</h3>
+                            <p>Jon Duckett</p>
+                            <span class="category">Web Design</span>
+                            <button class="read-btn">Read Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Book 8 -->
+                <div class="col-xl-4 col-lg-6 col-md-6 col-12 mb-4">
+                    <div class="book-card" data-title="Learning React" data-author="Alex Banks">
+                        <img src="images/react.jpeg" alt="Learning React" class="book-cover">
+                        <div class="book-card-body">
+                            <h3>Learning React</h3>
+                            <p>Alex Banks</p>
+                            <span class="category">Web Development</span>
+                            <button class="read-btn">Read Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Book 9 -->
+                <div class="col-xl-4 col-lg-6 col-md-6 col-12 mb-4">
+                    <div class="book-card" data-title="Java: A Beginner's Guide" data-author="Herbert Schildt">
+                        <img src="images/javabegiinerguide.jpg" alt="Java: A Beginner's Guide" class="book-cover">
+                        <div class="book-card-body">
+                            <h3>Java: A Beginner's Guide</h3>
+                            <p>Herbert Schildt</p>
+                            <span class="category">Programming</span>
+                            <button class="read-btn">Read Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Book 10 - Additional book to show responsive layout -->
+                <div class="col-xl-4 col-lg-6 col-md-6 col-12 mb-4">
+                    <div class="book-card" data-title="Algorithms" data-author="Thomas H. Cormen">
+                        <img src="images/algorithms.jpg" alt="Algorithms" class="book-cover">
+                        <div class="book-card-body">
+                            <h3>Algorithms</h3>
+                            <p>Thomas H. Cormen</p>
+                            <span class="category">Computer Science</span>
+                            <button class="read-btn">Read Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Book 11 -->
+                <div class="col-xl-4 col-lg-6 col-md-6 col-12 mb-4">
+                    <div class="book-card" data-title="The Nomads" data-author="I. Esenberlin">
+                        <img src="images/the_nomads.jpg" alt="The Nomads" class="book-cover">
+                        <div class="book-card-body">
+                            <h3>The Nomads</h3>
+                            <p>I. Esenberlin</p>
+                            <span class="category">History</span>
+                            <button class="read-btn">Read Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Book 12 -->
+                <div class="col-xl-4 col-lg-6 col-md-6 col-12 mb-4">
+                    <div class="book-card" data-title="Абай жолы" data-author="М. Әуезов">
+                        <img src="images/abai_zh.jpg" alt="Абай жолы" class="book-cover">
+                        <div class="book-card-body">
+                            <h3>Абай жолы</h3>
+                            <p>М. Әуезов</p>
+                            <span class="category">Literature</span>
+                            <button class="read-btn">Read Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p>&copy; 2025 DigitalReads. Created by: Bekbolat Tileukhan, Nurkhan Khassenov, Nurassyl Meirbek, Dias Zhakin</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+     <script>
+        // JavaScript для бургер-меню
+        document.getElementById('menuToggle').addEventListener('click', function() {
+            const nav = document.getElementById('mainNav');
+            nav.classList.toggle('show');
+        });
+    </script>
+</body>
+</html>

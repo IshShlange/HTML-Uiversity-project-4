@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Books - DigitalReads</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <img src="images/library.jpg" alt="DigitalReads Logo">
+                    <span class="logo-text">DigitalReads</span>
+                </a>
+                
+                <button class="menu-toggle" id="menuToggle">☰</button>
+                
+                <nav class="nav" id="mainNav">
+                    <ul class="main-menu">
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="catalog.html">Catalog</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="mybooks.html">My Books</a></li>
+                        <li><a href="events.html">Events</a></li>
+                    </ul>
+                    
+                    <ul class="auth-menu">
+                        <li><a href="login.html" class="login-btn">Login</a></li>
+                        <li><a href="register.html" class="register-btn">Register</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mt-4">
+        <section class="catalog-section">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="text-center mb-4">Books You Borrowed</h2>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-xl-4 col-lg-6 col-md-6 col-12 mb-4">
+                    <div class="book-card">
+                        <img src="images/algorithms.jpg" alt="Algorithms Book" class="book-cover">
+                        <h3>Algorithms</h3>
+                        <p>Thomas H. Cormen</p>
+                        <p><strong>Due:</strong> 10/10/2025</p>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-6 col-md-6 col-12 mb-4">
+                    <div class="book-card">
+                        <img src="images/abai_zh.jpg" alt="Kazakh Literature" class="book-cover">
+                        <h3>Абай жолы</h3>
+                        <p>М. Әуезов</p>
+                        <p><strong>Due:</strong> 15/10/2025</p>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-6 col-md-6 col-12 mb-4">
+                    <div class="book-card">
+                        <img src="images/the_nomads.jpg" alt="History of Central Asia" class="book-cover">
+                        <h3>The Nomads</h3>
+                        <p>I. Esenberlin</p>
+                        <p><strong>Status:</strong> Currently Reading</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p>&copy; 2025 DigitalReads. Created by: Bekbolat Tileukhan, Nurkhan Khassenov, Nurassyl Meirbek, Dias Zhakin</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+     <script>
+        // JavaScript для бургер-меню
+        document.getElementById('menuToggle').addEventListener('click', function() {
+            const nav = document.getElementById('mainNav');
+            nav.classList.toggle('show');
+        });
+    </script>
+</body>
+</html>

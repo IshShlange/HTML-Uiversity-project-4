@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - DigitalReads</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <img src="images/library.jpg" alt="DigitalReads Logo">
+                    <span class="logo-text">DigitalReads</span>
+                </a>
+                
+                <button class="menu-toggle" id="menuToggle">☰</button>
+                
+                <nav class="nav" id="mainNav">
+                    <ul class="main-menu">
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="catalog.html">Catalog</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="mybooks.html">My Books</a></li>
+                        <li><a href="events.html">Events</a></li>
+                    </ul>
+                    
+                    <ul class="auth-menu">
+                        <li><a href="login.html" class="login-btn">Login</a></li>
+                        <li><a href="register.html" class="register-btn">Register</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main id="main">
+        <section class="auth-section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-8 col-lg-6 col-12">
+                        <div class="auth-form">
+                            <h2 class="text-center mb-4">Create New Account</h2>
+                            <form>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <label for="register-fullname">Full Name:</label>
+                                            <input type="text" id="register-fullname" name="fullname" required>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <label for="register-email">Email:</label>
+                                            <input type="email" id="register-email" name="email" required>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-md-6 col-12">
+                                        <div class="form-group">
+                                            <label for="register-password">Password:</label>
+                                            <input type="password" id="register-password" name="password" required minlength="6">
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-md-6 col-12">
+                                        <div class="form-group">
+                                            <label for="register-confirm">Confirm Password:</label>
+                                            <input type="password" id="register-confirm" name="confirm-password" required>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-md-6 col-12">
+                                        <div class="form-group">
+                                            <label for="register-birthdate">Date of Birth:</label>
+                                            <input type="date" id="register-birthdate" name="birthdate">
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-md-6 col-12">
+                                        <div class="form-group">
+                                            <label for="register-country">Country:</label>
+                                            <select id="register-country" name="country">
+                                                <option value="">Select Country</option>
+                                                <option value="kz">Kazakhstan</option>
+                                                <option value="us">United States</option>
+                                                <option value="uk">United Kingdom</option>
+                                                <option value="ca">Canada</option>
+                                                <option value="ru">Russia</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-12">
+                                        <div class="form-group checkbox-group">
+                                            <input type="checkbox" id="register-terms" name="terms" required>
+                                            <label for="register-terms">I agree to the <a href="#">Terms of Service</a></label>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-12">
+                                        <button type="submit" class="auth-btn">Register</button>
+                                    </div>
+                                </div>
+                            </form>
+                            <p class="auth-link text-center mt-3">Already have an account? <a href="login.html">Login here</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p>&copy; 2025 DigitalReads. Created by: Bekbolat Tileukhan, Nurkhan Khassenov, Nurassyl Meirbek, Dias Zhakin</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+     <script>
+        // JavaScript для бургер-меню
+        document.getElementById('menuToggle').addEventListener('click', function() {
+            const nav = document.getElementById('mainNav');
+            nav.classList.toggle('show');
+        });
+    </script>
+</body>
+</html>

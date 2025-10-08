@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DigitalReads - Electronic Library</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <img src="images/library.jpg" alt="DigitalReads Logo">
+                    <span class="logo-text">DigitalReads</span>
+                </a>
+                
+                <button class="menu-toggle" id="menuToggle">☰</button>
+                
+                <nav class="nav" id="mainNav">
+                    <ul class="main-menu">
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="catalog.html">Catalog</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="mybooks.html">My Books</a></li>
+                        <li><a href="events.html">Events</a></li>
+                    </ul>
+                    
+                    <ul class="auth-menu">
+                        <li><a href="login.html" class="login-btn">Login</a></li>
+                        <li><a href="register.html" class="register-btn">Register</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main id="main">
+        <section class="hero-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h2>Welcome to Your Digital Library</h2>
+                        <p>Access thousands of e-books, articles, and academic resources anytime, anywhere.</p>
+                        <a href="catalog.html" class="button">Browse Catalog</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="text-center mb-4">Why Choose Us?</h2>
+                    </div>
+                </div>
+                <div class="features">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-12 mb-4">
+                            <div class="feature-item">
+                                <h3>Wide Collection</h3>
+                                <p>From classics to modern research papers.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12 mb-4">
+                            <div class="feature-item">
+                                <h3>Instant Access</h3>
+                                <p>Download or read online immediately.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12 mb-4">
+                            <div class="feature-item">
+                                <h3>Secure & Legal</h3>
+                                <p>All materials are licensed and safe.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p>&copy; 2025 DigitalReads. Created by: Bekbolat Tileukhan, Nurkhan Khassenov, Nurassyl Meirbek, Dias Zhakin</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+     <script>
+        // JavaScript для бургер-меню
+        document.getElementById('menuToggle').addEventListener('click', function() {
+            const nav = document.getElementById('mainNav');
+            nav.classList.toggle('show');
+        });
+    </script>
+</body>
+</html>

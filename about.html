@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - DigitalReads</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <img src="images/library.jpg" alt="DigitalReads Logo">
+                    <span class="logo-text">DigitalReads</span>
+                </a>
+                
+                <button class="menu-toggle" id="menuToggle">☰</button>
+                
+                <nav class="nav" id="mainNav">
+                    <ul class="main-menu">
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="catalog.html">Catalog</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="mybooks.html">My Books</a></li>
+                        <li><a href="events.html">Events</a></li>
+                    </ul>
+                    
+                    <ul class="auth-menu">
+                        <li><a href="login.html" class="login-btn">Login</a></li>
+                        <li><a href="register.html" class="register-btn">Register</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mt-4">
+        <div class="row">
+            <!-- Main Content -->
+            <div class="col-lg-9 col-md-8 col-12 order-2 order-md-1">
+                <div class="main-content">
+                    <h1 class="text-center mb-4">About DigitalReads</h1>
+                    
+                    <div class="row">
+                        <div class="col-12">
+                            <h2>Who We Are</h2>
+                            <p>
+                                DigitalReads is a modern online library platform created by students passionate about books and technology. 
+                                Our mission is to make knowledge accessible to everyone by providing a wide 
+                                collection of digital books across various genres — from technology and science 
+                                to literature and history.
+                            </p>
+                        </div>
+                        
+                        <div class="col-12 mt-4">
+                            <h2>Our Mission</h2>
+                            <p>
+                                We believe in <strong>equal access to education</strong>. Our platform allows 
+                                students, researchers, and book lovers to explore and read books anytime, anywhere.
+                                By using modern web technologies, DigitalReads is designed to be simple, responsive, 
+                                and user-friendly.
+                            </p>
+                        </div>
+                        
+                        <div class="col-12 mt-4">
+                            <h2>Why Choose DigitalReads?</h2>
+                            <ul class="styled-list">
+                                <li>✔️ 1000+ Books in multiple categories</li>
+                                <li>✔️ Easy search and personalized bookshelf</li>
+                                <li>✔️ Free access to educational materials</li>
+                                <li>✔️ Modern responsive design</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Sidebar -->
+            <div class="col-lg-3 col-md-4 col-12 order-1 order-md-2">
+                <aside class="sidebar">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="catalog.html">📖 Browse Catalog</a></li>
+                        <li><a href="events.html">📅 Upcoming Events</a></li>
+                        <li><a href="contact.html">✉️ Contact Us</a></li>
+                        <li><a href="mybooks.html">📚 My Bookshelf</a></li>
+                        <li><a href="register.html">📝 Join DigitalReads</a></li>
+                    </ul>
+                </aside>
+            </div>
+        </div>
+        
+        <!-- Footer Note -->
+        <div class="row mt-4">
+            <div class="col-12">
+                <div class="footer-note text-center p-3">
+                    <p class="mb-0"><strong>Did you know?</strong> DigitalReads started as a small project and 
+                    has grown into a full-featured online library platform.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer id="footer" class="mt-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p>&copy; 2025 DigitalReads. Created by: Bekbolat Tileukhan, Nurkhan Khassenov, Nurassyl Meirbek, Dias Zhakin</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+     <script>
+        // JavaScript для бургер-меню
+        document.getElementById('menuToggle').addEventListener('click', function() {
+            const nav = document.getElementById('mainNav');
+            nav.classList.toggle('show');
+        });
+    </script>
+</body>
+</html>
